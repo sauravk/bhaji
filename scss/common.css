@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic);
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*=========================Variables define=============================*/
+/*=========================mixin define=============================*/
+body, ul, li, ol {
+  color: #7e7774;
+  font: 100% "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+body img {
+  max-width: 100%; }
+
+.warpper {
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative; }
+
+/*=========================Header scss=============================*/
+header {
+  background: #34d1c6;
+  overflow: hidden; }
+  header .logo {
+    margin: 40px 0 31px 22px;
+    float: left; }
+  header .top-nav-menu-button {
+    background: #54d8cf;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 15px 10px;
+    font-size: 16px;
+    margin: 38px 22px 0 0;
+    float: right; }
+    @media screen and (min-width: 600px) {
+      header .top-nav-menu-button {
+        display: none; } }
+  header .header-right {
+    clear: both;
+    margin: 0 22px; }
+    @media screen and (min-width: 600px) {
+      header .header-right {
+        float: right;
+        clear: none;
+        margin: 65px 22px 0 0;
+        width: 38%;
+        text-align: right; } }
+    header .header-right .top-nav li {
+      border-bottom: solid 1px #54d8cf;
+      padding: 19px 0; }
+      @media screen and (min-width: 600px) {
+        header .header-right .top-nav li {
+          float: left;
+          border-bottom: 0;
+          padding: 0;
+          margin-right: 50px; } }
+      header .header-right .top-nav li a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 700; }
+    header .header-right .header-icons {
+      margin: 15px 0 25px 0; }
+      @media screen and (min-width: 600px) {
+        header .header-right .header-icons {
+          margin: 0; } }
+      header .header-right .header-icons i {
+        color: white;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        border-radius: 12px;
+        padding: 4px 0;
+        height: 24px;
+        width: 24px;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 5px;
+        background: #5291bd; }
+      header .header-right .header-icons i + i {
+        background: #53c1dd; }
+      header .header-right .header-icons i + i + i {
+        background: #f6b14a; }
+      header .header-right .header-icons i + i + i + i {
+        background: #d85557;
+        margin-right: 0; }
+
+/*=========================Slideshow scss=============================*/
+.slideshow {
+  background: #f7f7f7;
+  position: relative;
+  margin-bottom: 85px; }
+  .slideshow .slideshow-title {
+    color: #7e7774;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 13px; }
+    @media screen and (min-width: 600px) {
+      .slideshow .slideshow-title {
+        position: absolute;
+        top: 100px;
+        right: 60px;
+        width: 30%;
+        color: white; } }
+  .slideshow .slideshow-num {
+    overflow: hidden;
+    text-align: center;
+    padding: 18px 0 55px 0; }
+    .slideshow .slideshow-num b {
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      border-radius: 7px;
+      border: solid 1px #b2acac;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      cursor: pointer; }
+      .slideshow .slideshow-num b:hover {
+        background: #b2acac; }
+      .slideshow .slideshow-num b:active {
+        background: #b2acac; }
+      @media screen and (min-width: 600px) {
+        .slideshow .slideshow-num b {
+          display: block;
+          margin-bottom: 5px; } }
+    @media screen and (min-width: 600px) {
+      .slideshow .slideshow-num {
+        position: absolute;
+        top: 180px;
+        left: 20px; } }
+  .slideshow .slideshow-h-outer {
+    bottom: -50px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    .slideshow .slideshow-h-outer .slideshow-h {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      width: 100px;
+      height: 100px;
+      background: #34d1c6;
+      color: white;
+      font-size: 46px;
+      text-align: center;
+      padding: 18px 0;
+      margin: 0 auto; }
+
+/*=========================he text scss=============================*/
+.he-text {
+  padding: 0 25px 60px;
+  text-align: center; }
+  .he-text h1 {
+    font-size: 24px;
+    font-weight: 400; }
+  .he-text a {
+    color: #34d1c6;
+    text-decoration: none;
+    font-weight: 700;
+    padding-right: 10px; }
+  .he-text a + a {
+    padding-left: 10px; }
+
+/*=========================work scss=============================*/
+.work {
+  padding: 0 22px 55px 22px;
+  text-align: center;
+  border-bottom: solid 1px #ddd;
+  overflow: hidden; }
+  .work .work-sample {
+    overflow: hidden; }
+  .work .work-sample li {
+    margin-bottom: 30px; }
+    @media screen and (min-width: 600px) {
+      .work .work-sample li {
+        float: left;
+        width: 31.5%;
+        height: auto;
+        color: #f7f7f7;
+        margin-right: 2.6%; }
+        .work .work-sample li:nth-child(3n) {
+          margin-right: 0; } }
+  .work button {
+    background: #f7f7f7;
+    padding: 14px 27px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #7e7774;
+    cursor: pointer;
+    border: 0; }
+
+/*=========================Latestnews scss=============================*/
+.latest-news {
+  padding: 85px 22px 55px 22px; }
+  .latest-news h1 {
+    text-align: center;
+    color: #34d1c6;
+    margin: 0 0 65px 0; }
+  .latest-news .latest-news-inner li {
+    margin-bottom: 35px; }
+    @media screen and (min-width: 600px) {
+      .latest-news .latest-news-inner li {
+        float: left;
+        width: 23.2%;
+        height: auto;
+        margin-right: 2.3%; }
+        .latest-news .latest-news-inner li:last-child {
+          margin-right: 0; } }
+    .latest-news .latest-news-inner li h2 {
+      font-size: 16px;
+      font-weight: 400px; }
+      .latest-news .latest-news-inner li h2 a {
+        color: #34d1c6;
+        text-decoration: none; }
